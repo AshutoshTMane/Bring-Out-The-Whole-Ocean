@@ -1,7 +1,7 @@
 
 #include "../include/array.h"
 
-void swapStudents(Student& s1, Student& s2) {
+void Array::swap(Student& s1, Student& s2) {
     Student temp = s1; // Create a temporary copy of s1
     s1 = s2;           // Assign s2 to s1
     s2 = temp;         // Assign the temporary copy to s2

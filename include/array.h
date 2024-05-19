@@ -28,7 +28,7 @@ public:
     void addStudent(const Student s);
     void deleteStudent(Student s);
 
-    void Array::bubbleSort(std::function<bool(const Student&, const Student&)> comparator);
+    void bubbleSort(std::function<bool(const Student&, const Student&)> comparator);
     void insertionSort();
     void selectionSort();
     void quickSort();
