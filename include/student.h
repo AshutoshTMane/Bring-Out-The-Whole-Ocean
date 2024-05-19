@@ -43,6 +43,9 @@ public:
     Student operator= (const Student& s);
     // The = operator overloading function, used to easy copy over data from one student object to another
 
+    bool compareByID(const Student& s1, const Student& s2);
+    bool compareByGrade(const Student& s1, const Student& s2);
+
     // Class mutators, allow for other files to get or update data indirectly
     int get_id_number(){ return id_number; }
     std::string get_name(){ return name; }
