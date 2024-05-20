@@ -29,10 +29,12 @@ public:
     void deleteStudent(Student s);
 
     void bubbleSort(std::function<bool(const Student&, const Student&)> comparator);
-    void insertionSort();
-    void selectionSort();
-    void quickSort();
-    void mergeSort();
+    void insertionSort(std::function<bool(const Student&, const Student&)> comparator);
+    void selectionSort(std::function<bool(const Student&, const Student&)> comparator);
+    void quickSort(std::function<bool(const Student&, const Student&)> comparator, int low, int high);
+    int partition(std::function<bool(const Student&, const Student&)> comparator, int low, int high);
+    void mergeSort(std::function<bool(const Student&, const Student&)> comparator, int left, int right);
+    void merge(std::function<bool(const Student&, const Student&)> comparator, int left, int mid, int right);
 
 
     ~Array() {
